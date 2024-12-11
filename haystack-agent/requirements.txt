@@ -1,2 +1,3 @@
 haystack-ai
 openapi3
+jsonref
