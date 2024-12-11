@@ -1,0 +1,6 @@
+langchain_community
+pyyaml 
+requests
+fastapi 
+uvicorn
+langchain_openai
