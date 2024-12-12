@@ -16,7 +16,7 @@ ALLOW_DANGEROUS_REQUEST = True
 # Initialize the OpenAPI tool with the F1 API schema
 f1_tool = OpenAPITool(
     generator_api=LLMProvider.OPENAI,
-    spec="f1_openapi_spec.yaml",
+    spec="openapi.yaml",
 )
 
 # Define the prompt
