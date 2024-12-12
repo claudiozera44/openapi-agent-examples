@@ -10,4 +10,4 @@ To run the F1 API server, follow these steps:
 
 ## Getting the OpenAPI Spec
 
-To get the OpenAPI spec for the API server, navigate to `[http://127.0.0.1:8000/openapi.json]([http://](http://127.0.0.1:8000/openapi.json) and save the JSON response to a file.
+To get the OpenAPI spec for the API server, navigate to `http://127.0.0.1:8000/openapi.json`and save the JSON response to a file.

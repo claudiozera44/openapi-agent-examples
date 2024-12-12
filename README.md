@@ -75,7 +75,7 @@ An AI agent built with Haystack that performs similar tasks as the LangChain age
 
    - The server will be available at `http://127.0.0.1:8000`.
 
-    - To get the OpenAPI spec for the API server, navigate to `http://127.0.0.1:8000/openapi.json`.
+   - To get the OpenAPI spec for the API server, navigate to `http://127.0.0.1:8000/openapi.json`.
 
 3. **Run the LangChain Agent:**
    - Navigate to the `langchain-agent` directory:
