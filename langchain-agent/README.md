@@ -5,8 +5,8 @@ This guide will help you set up and run the LangChain Agent to query F1 race inf
 ## Prerequisites
 
 - Python 3.7+
-- Anthropic API key
-- [FastAPI F1 Server](https://github.com/AbdulDavids/example-fast-api-f1)
+- Anthropic API key, which you can get by signing up at [Anthropic](https://anthropic.com/)
+- [FastAPI F1 Server](/f1-fastapi-server/README.md) running
 
 ## Setup Instructions
 

@@ -5,8 +5,8 @@ This guide will help you set up and run the Haystack Agent to query F1 race info
 ## Prerequisites
 
 - Python 3.7+
-- OpenAI API key
-- [FastAPI F1 Server](https://github.com/AbdulDavids/example-fast-api-f1)
+- OpenAI API key, which you can get by signing up at [OpenAI](https://platform.openai.com/)
+- [FastAPI F1 Server](/f1-fastapi-server/README.md) running
 
 ## Setup Instructions
 
