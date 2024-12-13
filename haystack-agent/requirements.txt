@@ -1,4 +1,4 @@
 haystack-ai
 openapi3
 jsonref
-haystack-experimental
+haystack-experimental==0.3.0

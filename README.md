@@ -1,4 +1,29 @@
-# OpenAPI Agent Examples
+
+<p align="center">
+  <a href="https://speakeasyapi.dev">
+    <img alt="Speakeasy" title="Speakeasy" src="https://user-images.githubusercontent.com/68016351/196461357-fcb8d90f-cd67-498e-850f-6146c58d0114.png" width="400" style="color: black">
+  </a>
+</p>
+
+
+<p align="center">
+  <i>Speakeasy is the fastest way to ship developer experience for your APIs.</i><br/> 
+  <a href="https://speakeasyapi.dev/">speakeasyapi.dev</a>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi">
+<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+</p>
+
+<h1>
+ OpenAPI Agent Examples
+</h1>
+
+
+</div>
+
+
 
 This repository demonstrates how to build OpenAPI-powered AI agents using two popular frameworks: [LangChain](https://python.langchain.com/docs/introduction/) and [Haystack](https://haystack.deepset.ai/). These agents can process user queries, interact with APIs described by OpenAPI specifications, and generate intelligent responses.
 
