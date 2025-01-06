@@ -1,21 +1,16 @@
-
-<p align="center">
-  <a href="https://speakeasyapi.dev">
-    <img alt="Speakeasy" title="Speakeasy" src="https://user-images.githubusercontent.com/68016351/196461357-fcb8d90f-cd67-498e-850f-6146c58d0114.png" width="400" style="color: black">
-  </a>
-</p>
-
-
-<p align="center">
-  <i>Speakeasy is the fastest way to ship developer experience for your APIs.</i><br/> 
-  <a href="https://speakeasyapi.dev/">speakeasyapi.dev</a>
-</p>
-
-<p align="center">
-<img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi">
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
-</p>
-
+<div align="center">
+ <a href="https://www.speakeasy.com/" target="_blank">
+   <picture>
+       <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/21dd5d3a-aefc-4cd3-abee-5e17ef1d4dad">
+       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/0a747f98-d228-462d-9964-fd87bf93adc5">
+       <img width="100px" src="https://github.com/user-attachments/assets/21dd5d3a-aefc-4cd3-abee-5e17ef1d4dad#gh-light-mode-only" alt="Speakeasy">
+   </picture>
+ </a>
+  <h1>Speakeasy</h1>
+  <p>Build APIs your users love ❤️ with Speakeasy</p>
+  <div>
+   <a href="https://speakeasy.com/docs/create-client-sdks/" target="_blank"><b>Docs Quickstart</b></a>&nbsp;&nbsp;//&nbsp;&nbsp;<a href="https://join.slack.com/t/speakeasy-dev/shared_invite/zt-1cwb3flxz-lS5SyZxAsF_3NOq5xc8Cjw" target="_blank"><b>Join us on Slack</b></a>
+  </div>
 <h1>
  OpenAPI agent examples
 </h1>
