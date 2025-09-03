@@ -18,8 +18,6 @@ This repository demonstrates how to build OpenAPI-powered AI agents using two po
 
 For an in-depth comparison of LangChain and Haystack, see [this article](https://www.speakeasy.com/openapi).
 
-Credits to [Chai Landau](https://github.com/chailandau), as this repository was initially forked from repo [speakeasy-api/openapi-agent-examples](https://github.com/speakeasy-api/openapi-agent-examples)
-
 
 ## Repository structure
 
@@ -188,3 +186,8 @@ A mock Policy (Insurance, London Market) API server built using FastAPI. This AP
 ## Comparison of LangChain and Haystack
 
 Both LangChain and Haystack are capable frameworks for building OpenAPI-powered AI agents. See [this article](https://www.speakeasy.com/openapi) for an in-depth comparison.
+
+## Credits
+
+Credits to [Chai Landau](https://github.com/chailandau), as this repository was initially forked from repo [speakeasy-api/openapi-agent-examples](https://github.com/speakeasy-api/openapi-agent-examples)
+
