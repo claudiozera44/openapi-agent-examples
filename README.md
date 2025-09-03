@@ -40,7 +40,7 @@ A mock Formula One (F1) API server built using FastAPI. This API serves as the b
 An AI agent built with LangChain that interacts with the F1 API to fetch race data based on user queries.
 
 - **Files:**
-  - `langchain_agent.py`: Script defining the LangChain agent.
+  - `langchain-agent.py`: Script defining the LangChain agent.
   - `openapi.json`: OpenAPI document (converted to JSON format) for the F1 API.
   - `README.md`: Instructions for setting up and running the LangChain agent.
   - `requirements.txt`: Dependencies required for the LangChain agent.
@@ -149,8 +149,8 @@ A mock Policy (Insurance, London Market) API server built using FastAPI. This AP
    - Run the agent with a query:
 
      ```bash
-     python langchain_agent-f1.py "Who won the Monaco Grand Prix in 2024?"
-     python langchain_agent-policy.py "Who is the client for stamp ref. P25R0934458M year 2025?"
+     python langchain_f1_agent-console.py "Who won the Monaco Grand Prix in 2024?"
+     python langchain_policy_agent-console.py "Who is the client for stamp ref. P25R0934458M year 2025?"
      ```
 
 5. **Run the streamlit app**
