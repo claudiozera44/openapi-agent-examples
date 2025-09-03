@@ -1,0 +1,231 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FastAPI",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:7000"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Read Root",
+        "operationId": "read_root__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/clients/{year}": {
+      "get": {
+        "summary": "Get Year Clients",
+        "operationId": "get_year_clients_clients__year__get",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Year"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/YearClientsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/clients/{year}/{stampReference}": {
+      "get": {
+        "summary": "Get Stampreference Client",
+        "operationId": "get_stampReference_client_clients__year___stampReference__get",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Year"
+            }
+          },
+          {
+            "name": "stampReference",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stampreference"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StampReferenceClientResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "StampReferenceClient": {
+        "properties": {
+          "stampReference": {
+            "type": "string",
+            "title": "Stampreference"
+          },
+          "client": {
+            "type": "string",
+            "title": "Client"
+          }
+        },
+        "type": "object",
+        "required": [
+          "stampReference",
+          "client"
+        ],
+        "title": "StampReferenceClient"
+      },
+      "StampReferenceClientResponse": {
+        "properties": {
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "stampReference": {
+            "type": "string",
+            "title": "Stampreference"
+          },
+          "client": {
+            "type": "string",
+            "title": "Client"
+          }
+        },
+        "type": "object",
+        "required": [
+          "year",
+          "stampReference",
+          "client"
+        ],
+        "title": "StampReferenceClientResponse"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "YearClientsResponse": {
+        "properties": {
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "clients": {
+            "items": {
+              "$ref": "#/components/schemas/StampReferenceClient"
+            },
+            "type": "array",
+            "title": "Clients"
+          }
+        },
+        "type": "object",
+        "required": [
+          "year",
+          "clients"
+        ],
+        "title": "YearClientsResponse"
+      }
+    }
+  }
+}

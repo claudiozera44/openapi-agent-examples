@@ -1,0 +1,146 @@
+openapi: 3.1.0
+info:
+  title: FastAPI
+  version: 0.1.0
+paths:
+  "/":
+    get:
+      summary: Read Root
+      operationId: read_root__get
+      responses:
+        "200":
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  "/clients/{year}":
+    get:
+      summary: Get Year Clients
+      operationId: get_year_clients_clients__year__get
+      parameters:
+        - name: year
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Year
+      responses:
+        "200":
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/YearClientsResponse"
+        "422":
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HTTPValidationError"
+  "/clients/{year}/{stampReference}":
+    get:
+      summary: Get StampReference Client
+      operationId: get_stampReference_client_clients__year___stampReference__get
+      parameters:
+        - name: year
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Year
+        - name: stampReference
+          in: path
+          required: true
+          schema:
+            type: string
+            title: StampReference
+      responses:
+        "200":
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StampReferenceClientResponse"
+        "422":
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HTTPValidationError"
+components:
+  schemas:
+    HTTPValidationError:
+      type: object
+      title: HTTPValidationError
+      properties:
+        detail:
+          type: array
+          title: Detail
+          items:
+            $ref: "#/components/schemas/ValidationError"
+    StampReferenceClient:
+      type: object
+      title: StampReferenceClient
+      required:
+        - stampReference
+        - client
+      properties:
+        stampReference:
+          type: string
+          title: StampReference
+        client:
+          type: string
+          title: Client
+    StampReferenceClientResponse:
+      type: object
+      title: StampReferenceClientResponse
+      required:
+        - year
+        - stampReference
+        - client
+      properties:
+        year:
+          type: integer
+          title: Year
+        stampReference:
+          type: string
+          title: StampReference
+        client:
+          type: string
+          title: Client
+    ValidationError:
+      type: object
+      title: ValidationError
+      required:
+        - loc
+        - msg
+        - type
+      properties:
+        loc:
+          type: array
+          title: Location
+          items:
+            anyOf:
+              - type: string
+              - type: integer
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+    YearClientsResponse:
+      type: object
+      title: YearClientsResponse
+      required:
+        - year
+        - clients
+      properties:
+        year:
+          type: integer
+          title: Year
+        clients:
+          type: array
+          title: Clients
+          items:
+            $ref: "#/components/schemas/StampReferenceClient"

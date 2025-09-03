@@ -1,2 +1,5 @@
 langchain_anthropic
 langchain_community
+langchain_openai
+openai
+streamlit
