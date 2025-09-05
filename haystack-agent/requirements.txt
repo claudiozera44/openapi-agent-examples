@@ -1,4 +1,5 @@
-haystack-ai
+haystack-ai==2.7.0
 openapi3
 jsonref
 haystack-experimental==0.3.0
+python-dotenv

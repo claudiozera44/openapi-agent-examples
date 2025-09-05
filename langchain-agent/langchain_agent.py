@@ -6,6 +6,9 @@ from langchain_community.agent_toolkits.openapi import planner
 from langchain_community.agent_toolkits.openapi.spec import reduce_openapi_spec
 from config.llm import LlmService
 
+from langchain.chains.openai_functions.openapi import openapi_spec_to_openai_fn
+
+
 # Set to True to allow dangerous requests
 # (e.g. requests that modify data or perform actions)
 ALLOW_DANGEROUS_REQUEST = True
@@ -30,7 +33,9 @@ class LangChainAgent:
             ("human", user_query),  
         ]  
         tic = time.perf_counter()
-        response = agent.invoke(messages)
+        response = "this is just a simulation, agent invoke is commented out"
+        print(response)
+        #response = agent.invoke(messages)
         toc = time.perf_counter()
         print("===============================================================")
         print(f"=== DONE: invoke the agent - {toc - tic:0.4f} seconds ==========")
