@@ -27,7 +27,7 @@ This guide will help you set up and run the LangChain Agent to query policy info
 4. Run the LangChain agent with your query:
 
     ```bash
-    python langchain-agent-policy.py "Who is the client for stamp ref. P25R0934458M year 2025?"
+    python langchain_policy_agent-console.py "Who is the client for stamp ref. P25R0934458M year 2025?"
     ```
 
 5. Run the streamlit app

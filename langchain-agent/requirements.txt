@@ -1,4 +1,6 @@
+cerebras_cloud_sdk
 langchain_anthropic
+langchain-cerebras
 langchain_community
 langchain_openai
 openai
